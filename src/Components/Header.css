@@ -1,0 +1,25 @@
+.menuItem {
+    display: flex;
+    
+}
+
+.menuItem li {
+    list-style: none;
+    margin-right: 30px;
+    padding: 10px;
+    font-size: large;
+}
+
+.menuItem li:hover {
+    background-color: #ece6e6af;
+    border-radius: 20px;
+}
+
+.underline {
+    text-decoration: none;
+}
+
+.loginBtn {
+    float: right;
+    margin-right: 80px;
+}
