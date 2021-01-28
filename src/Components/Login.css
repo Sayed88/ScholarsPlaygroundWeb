@@ -1,3 +1,17 @@
+ .dashlink{
+    float: left;
+    padding-left: 30px;
+}
+
+/*
+.logMsg {
+    text-align: center;
+}
+
+.logpg {
+    background-color: #f1f1f1;
+}
+
 .loginbtn {
     float: right;
     margin-right: 80px;
@@ -5,4 +19,44 @@
 
 .log {
     text-decoration: none;    
+}
+
+.login form {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.spcEmail {
+    margin-right: 40px;
+    text-align: left;
+}
+
+.spcPass {
+    margin-right: 11px;
+    text-align: left;
+}
+
+.formG {
+    margin-bottom: 5px;
+}
+
+.logBtn {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.logfooter {
+    line-height: 5px;
+    padding-bottom: 30px;
+} */
+
+@media all and (min-width: 480px) {
+    .login {
+        padding: 60px 0;
+    }
+
+    .login form {
+        margin: 0 auto;
+        max-width: 320px;
+    }
 }

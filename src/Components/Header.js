@@ -26,7 +26,7 @@ function Header() {
             </nav>
 
             <div className="loginpage">
-                <Link to="/login">
+                <Link to="/login" className="logbtn">
                     <h1>Login</h1>
                 </Link>
             </div>
