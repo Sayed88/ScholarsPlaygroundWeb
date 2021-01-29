@@ -26,17 +26,17 @@ function Login() {
                 </Link>
             </div>
 
-            <div className="logpg">
-                <h3>Welcome Back Scholar Please Sign in </h3>
+            <div>
                 <Form onSubmit={handleSubmit}>
+                <h3>Welcome Back Scholar Please Sign in </h3> <hr />
                     <Form.Group size="lg" controlId="email">
-                        <Form.Label className="spcEmail">Email:</Form.Label>
+                        <Form.Label>Email:</Form.Label>
                         <Form.Control
                             autoFocus
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            />
+                        />
                     </Form.Group>
 
                     <Form.Group size="lg" controlId="password">
@@ -45,24 +45,24 @@ function Login() {
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            />
+                        />
                     </Form.Group>
 
                     <Button block size="lg" type="submit" disabled={!validateForm()}>
                         Login
                     </Button>
+    
                 
+                    
+                    <p>
+                        <Link to="/forgotpassword">
+                            Forgot Password?
+                        </Link>
+                        <br/>
+                        New to the Playground? <Link to="/signup">Sign up Here</Link>
+                    </p>
                 </Form>
-
-                <div>
-                    <Link to="/forgotpassword">
-                        <p>Forgot Password?</p>
-                    </Link>
-                    <p>New to the Playground? <Link to="/signup">Sign up Here</Link></p>
-                </div>
-
             </div>
-
         </div>
     )
 }

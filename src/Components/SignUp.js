@@ -21,14 +21,14 @@ function SignUp() {
     }
 
     return (
-        <div className="login">
+        <div className="signUp">
             <Link to="/dashboard">
                 <h3 className="dashlink">Dashboard</h3>
             </Link>
 
-            <div className="logpg">
-                <h3>Welcome Back Scholara Playground Sign Up</h3>
+            <div>
                 <Form onSubmit={handleSubmit}>
+                <h3>Welcome Back Scholars Playground Sign Up</h3> <hr />
                     <Form.Group size="lg" controlId="email">
                         <Form.Label>Email:</Form.Label>
                         <Form.Control
@@ -68,23 +68,21 @@ function SignUp() {
                     </Form.Group>
 
                     <Form.Group size="lg" controlId="checkBox">
-                        <Form.Control
+                        <Form.Check
                             type="checkbox"
+                            label="Check the box for term of use and confirmation"
                         />
-                        <Form.Label>Check the box for term of use and confirmation:</Form.Label>
                     </Form.Group>
 
                     <Button block size="lg" type="submit" disabled={!validateForm()}>
                         SignUp
                     </Button>
                 
-                </Form>
-
-                <div>
                     <Link to="/forgotpassword">
                     </Link>
                     <p>Already a Scholar <Link to="/login"> Login Here</Link></p>
-                </div>
+                </Form>
+
 
             </div>
 

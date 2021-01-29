@@ -1,11 +1,18 @@
 
 @media all and (min-width: 480px) {
-    .login {
+    .signUp {
         padding: 60px 0;
     }
 
-    .login form {
+    .signUp form {
         margin: 0 auto;
         max-width: 320px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 30px;
     }
+}
+
+.signUp {
+    background-color: #e4e4e4;
 }

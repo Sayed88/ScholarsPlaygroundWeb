@@ -1,59 +1,11 @@
- .dashlink{
-    float: left;
-    padding-left: 30px;
+.dashlink{
+     float: left;
+     padding-left: 30px;
 }
 
 .logpg h3 {
     margin-right: 180px;
 }
-
-
-/*
-.logMsg {
-    text-align: center;
-}
-
-.logpg {
-    background-color: #f1f1f1;
-}
-
-.loginbtn {
-    float: right;
-    margin-right: 80px;
-}
-
-.log {
-    text-decoration: none;    
-}
-
-.login form {
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
-
-.spcEmail {
-    margin-right: 40px;
-    text-align: left;
-}
-
-.spcPass {
-    margin-right: 11px;
-    text-align: left;
-}
-
-.formG {
-    margin-bottom: 5px;
-}
-
-.logBtn {
-    margin-top: 20px;
-    margin-left: 70px;
-}
-
-.logfooter {
-    line-height: 5px;
-    padding-bottom: 30px;
-} */
 
 @media all and (min-width: 480px) {
     .login {
@@ -63,5 +15,12 @@
     .login form {
         margin: 0 auto;
         max-width: 320px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 30px;
     }
+}
+
+.login {
+    background-color: #e4e4e4;
 }
