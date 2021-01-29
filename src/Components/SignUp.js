@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
@@ -10,7 +11,6 @@ function SignUp() {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [confirmpassword, setconfirmpassword] = useState("");
-    const [checkbox, setcheckbox] = useState("");
 
     function validateForm() {
         return email.length > 0 && name.length > 0 && password.length > 0 && confirmpassword.length > 0;
@@ -27,10 +27,10 @@ function SignUp() {
             </Link>
 
             <div className="logpg">
-                <h3 className="logMsg">Welcome Back Scholara Playground Sign Up</h3>
+                <h3>Welcome Back Scholara Playground Sign Up</h3>
                 <Form onSubmit={handleSubmit}>
-                    <Form.Group className="formG" size="lg" controlId="email">
-                        <Form.Label className="spcEmail">Email:</Form.Label>
+                    <Form.Group size="lg" controlId="email">
+                        <Form.Label>Email:</Form.Label>
                         <Form.Control
                             autoFocus
                             type="email"
@@ -39,8 +39,8 @@ function SignUp() {
                             />
                     </Form.Group>
 
-                    <Form.Group className="formG" size="lg" controlId="name">
-                        <Form.Label className="spcEmail">FulName:</Form.Label>
+                    <Form.Group size="lg" controlId="name">
+                        <Form.Label >FulName:</Form.Label>
                         <Form.Control
                             autoFocus
                             type="name"
@@ -50,7 +50,7 @@ function SignUp() {
                     </Form.Group>
 
                     <Form.Group size="lg" controlId="password">
-                        <Form.Label className="spcPass">Password:</Form.Label>
+                        <Form.Label>Password:</Form.Label>
                         <Form.Control
                             type="password"
                             value={password}
@@ -59,7 +59,7 @@ function SignUp() {
                     </Form.Group>
 
                     <Form.Group size="lg" controlId="confirmpassword">
-                        <Form.Label className="spcPass">Confirm Password:</Form.Label>
+                        <Form.Label>Confirm Password:</Form.Label>
                         <Form.Control
                             type="password"
                             value={confirmpassword}
@@ -70,19 +70,17 @@ function SignUp() {
                     <Form.Group size="lg" controlId="checkBox">
                         <Form.Control
                             type="checkbox"
-                            value={checkbox}
-                            onChange={(e) => setcheckbox(e.target.value)}
-                            />
-                        <Form.Label className="spcPass">Check the box for term of use and confirmation:</Form.Label>
+                        />
+                        <Form.Label>Check the box for term of use and confirmation:</Form.Label>
                     </Form.Group>
 
-                    <Button className="logBtn" block size="lg" type="submit" disabled={!validateForm()}>
+                    <Button block size="lg" type="submit" disabled={!validateForm()}>
                         SignUp
                     </Button>
                 
                 </Form>
 
-                <div className="logfooter">
+                <div>
                     <Link to="/forgotpassword">
                     </Link>
                     <p>Already a Scholar <Link to="/login"> Login Here</Link></p>

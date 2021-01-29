@@ -27,9 +27,9 @@ function Login() {
             </div>
 
             <div className="logpg">
-                <h3 className="logMsg">Welcome Back Scholar Please Sign in </h3>
+                <h3>Welcome Back Scholar Please Sign in </h3>
                 <Form onSubmit={handleSubmit}>
-                    <Form.Group className="formG" size="lg" controlId="email">
+                    <Form.Group size="lg" controlId="email">
                         <Form.Label className="spcEmail">Email:</Form.Label>
                         <Form.Control
                             autoFocus
@@ -40,7 +40,7 @@ function Login() {
                     </Form.Group>
 
                     <Form.Group size="lg" controlId="password">
-                        <Form.Label className="spcPass">Password:</Form.Label>
+                        <Form.Label>Password:</Form.Label>
                         <Form.Control
                             type="password"
                             value={password}
@@ -48,13 +48,13 @@ function Login() {
                             />
                     </Form.Group>
 
-                    <Button className="logBtn" block size="lg" type="submit" disabled={!validateForm()}>
+                    <Button block size="lg" type="submit" disabled={!validateForm()}>
                         Login
                     </Button>
                 
                 </Form>
 
-                <div className="logfooter">
+                <div>
                     <Link to="/forgotpassword">
                         <p>Forgot Password?</p>
                     </Link>
