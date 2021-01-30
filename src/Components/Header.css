@@ -1,6 +1,9 @@
+.header {
+    width: 90%;
+}
 .menuItem {
     display: flex;
-    
+    width: fit-content;
 }
 
 .menuItem li {
@@ -8,6 +11,8 @@
     margin-right: 30px;
     padding: 10px;
     font-size: large;
+    width: fit-content;
+
 }
 
 .menuItem li:hover {
@@ -26,4 +31,8 @@
 
 .logbtn {
     text-decoration: none;
+}
+
+.modalBtn {
+    float: right;
 }

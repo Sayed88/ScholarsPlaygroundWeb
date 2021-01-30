@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Login.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
 
@@ -20,15 +19,13 @@ function Login() {
 
     return (
         <div className="login">
-            <div>
-                <Link to="/dashboard">
-                    <h3 className="dashlink">Dashboard</h3>
-                </Link>
-            </div>
+            <Link to="/dashboard">
+                <h3 className="dashlink">Dashboard</h3>
+            </Link>
 
             <div>
-                <Form onSubmit={handleSubmit}>
                 <h3>Welcome Back Scholar Please Sign in </h3> <hr />
+                <Form onSubmit={handleSubmit}>
                     <Form.Group size="lg" controlId="email">
                         <Form.Label>Email:</Form.Label>
                         <Form.Control
@@ -59,7 +56,7 @@ function Login() {
                             Forgot Password?
                         </Link>
                         <br/>
-                        New to the Playground? <Link to="/signup">Sign up Here</Link>
+                        New to the Playground? <Link to="/signup">SignUp Here</Link>
                     </p>
                 </Form>
             </div>

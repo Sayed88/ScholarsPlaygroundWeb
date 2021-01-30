@@ -1,5 +1,6 @@
 .dashboard {
-    width: 1200px;
     text-align: center;
-    margin-left: 80px;
+    width: fit-content;
+    margin-right: 20px;
+    margin-left: 20px;
 }

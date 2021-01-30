@@ -11,7 +11,7 @@ import SignUp from './Components/SignUp';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
 
         <Switch>
