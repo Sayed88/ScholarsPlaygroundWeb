@@ -2,7 +2,6 @@ import React from 'react';
 import './Dashboard.css';
 import VideoSection from './VideoSection';
 import AboutThePlayground from './AboutThePlayground';
-import Footer from './Footer';
 
 function Dashboard() {
     return (
@@ -10,7 +9,7 @@ function Dashboard() {
             <h1>Dashboard</h1>
             <VideoSection />
             <AboutThePlayground />
-            <Footer />
+            
         </div>
     )
 }

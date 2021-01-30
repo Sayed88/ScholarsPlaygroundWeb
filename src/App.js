@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Header from './Components/Header';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -18,34 +19,41 @@ function App() {
           <Route path="/about">
             <Header />  
             <About />
+            <Footer />
           </Route>
 
           <Route path="/partnerwithus">
             <Header />
             <PartnerWithUs />
+            <Footer />
           </Route>
 
           <Route path="/workwithus">
             <Header />
             <WorkWithUs />
+            <Footer />
           </Route>
 
           <Route path="/subscribe">
             <Header />
             <Subscribe />
+            <Footer />
           </Route>
 
           <Route path="/signup">
             <SignUp />
+            <Footer />
           </Route>
           
           <Route path="/login">
             <Login />
+            <Footer />
           </Route>
 
           <Route path="/">
             <Header />
             <Dashboard />
+            <Footer />
           </Route>
 
 

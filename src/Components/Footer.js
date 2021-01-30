@@ -3,10 +3,9 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div className="footer">
+        <div className="footer text-center">
             <h1>Footer</h1>
             <p>Footer Content</p>
-            <br /><br /><br /><br />
         </div>
     )
 }

@@ -1,29 +1,24 @@
-.menuItem {
-    display: flex;
-    
+.header{
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
-.menuItem li {
-    list-style: none;
-    margin-right: 30px;
-    padding: 10px;
-    font-size: large;
-}
-
-.menuItem li:hover {
-    background-color: #ece6e6af;
-    border-radius: 20px;
+.underline :hover {
+  background-color: #ece6e6af !important;
+  border-radius: 20px;
 }
 
 .underline {
-    text-decoration: none;
+  text-decoration: none !important;
+  justify-content: center;
+  list-style: none;
+  margin: 12px;
+  padding: 8px;
+  font-size: 1.2rem;
+  
 }
 
 .loginpage {
-    float: right;
-    margin-right: 80px;
+  text-decoration: none !important;
 }
 
-.logbtn {
-    text-decoration: none;
-}
