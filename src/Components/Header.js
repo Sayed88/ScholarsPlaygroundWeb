@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import './Header.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, } from 'react-router-dom';
-import { Button, Modal, Form } from 'react-bootstrap';
+import { Button, Modal, Form, Nav, Navbar } from 'react-bootstrap';
+import ViewListIcon from '@material-ui/icons/ViewList';
+import InfoIcon from '@material-ui/icons/Info';
+import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
+import GroupWorkIcon from '@material-ui/icons/GroupWork';
+import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 function Header() {
 
@@ -25,7 +33,76 @@ function Header() {
     return (
         <div className="header">
 
-            <nav className="navBar">
+            <Navbar variant="light" expand="lg">
+                <Navbar.Brand>
+                    <Link to="/dashboard" className='logo'><h3>ScholarsPlayground</h3></Link>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="nav-toggle" />
+                <Navbar.Collapse id="nav-toggle">
+
+                    <Nav className=" mr-auto navb">
+                        <Nav.Link>
+                            <Link to='/dashboard' className="menuItem">
+                                <div className="NavItems">
+                                    <ViewListIcon className="navIcn"/>Dashboard
+                                </div>
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to='/about' className="menuItem">
+                                <div className="NavItems">
+                                    <InfoIcon className="navIcn"/>
+                                    About
+                                </div>
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to='/partnerwithus' className="menuItem">
+                                <div className="NavItems">
+                                    <ThumbsUpDownIcon className="navIcn"/>
+                                    Partner With Us
+                                </div>
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to='/workwithus' className="menuItem">
+                                <div className="navItems">
+                                    <GroupWorkIcon className="navIcn"/>
+                                    Work With Us
+                                </div>
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to='/subscribe' className="menuItem">
+                            <div className="navItems">
+                                <SubscriptionsIcon className="navIcn"/>
+                                Subscribe
+                            </div>
+                                </Link>
+                        </Nav.Link>
+                    </Nav>
+                    <div className="sigbtn">
+                        <Button variant="outline-warning">
+                            <Link to="/signup" className='logo'>
+                                <div className="navItems">
+                                    <PersonAddIcon className="navIcn" />
+                                    SignUp
+                                </div>
+                            </Link>
+                        </Button>
+
+                        <Button variant="outline-info mx-2" onClick={handleShow}>
+                            <div className="navItems">
+                                <ExitToAppIcon className="navIcn"/>
+                                Login
+                            </div>
+                        </Button>
+                    </div>
+                </Navbar.Collapse>
+            </Navbar>
+
+
+            {/* <nav className="navBar">
                 <ul className="menuItem">
                     <li>
                         <Link to="/dashboard" className="underline">Dashboard</Link>
@@ -43,7 +120,7 @@ function Header() {
                         <Link to='/subscribe' className="underline">Subscribe</Link>
                     </li>
                 </ul>     
-            </nav>
+            </nav> */}
 
             {/* <div className="loginpage">
                 <Link to="/login" className="logbtn">
@@ -52,10 +129,6 @@ function Header() {
             </div> */}
 
             <div className="modalBtn">
-                <Button variant="info" onClick={handleShow}>
-                    Login
-                </Button>
-
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Welcome Back Scholar Please Login</Modal.Title>

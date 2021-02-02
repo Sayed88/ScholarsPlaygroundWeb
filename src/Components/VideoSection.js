@@ -1,6 +1,5 @@
 import React from 'react';
 import './VideoSection.css';
-
 function VideoSection() {
     return (
         <div className="videoSection">
