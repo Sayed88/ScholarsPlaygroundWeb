@@ -34,7 +34,7 @@
 }
 
 .sidebarRow:hover > .sidebarRow__title {
-    /* font-weight: bold; */
-    transform: scale(1.2);
-    transition: ease-in-out 0.3s;
+    font-weight: bold;
+    /* transform: scale(1.2);
+    transition: ease-in-out 0.3s; */
 }

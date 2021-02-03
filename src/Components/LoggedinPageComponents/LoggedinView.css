@@ -1,9 +1,9 @@
-.loggedinView {
+/* .loggedinView {
   text-align: center;
-  /* width: fit-content; */
+  width: fit-content;
   margin-right: 20px;
   margin-left: 20px;
-}
+} */
 
 .loggedinViewComponentsSection {
     display: flex;
@@ -20,3 +20,4 @@
   .userLogin h5 {
     margin-left: 10px;
   }
+

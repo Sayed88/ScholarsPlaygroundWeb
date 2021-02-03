@@ -1,4 +1,4 @@
-.footer h1 {
+/* .footer h1 {
     background-color: #6660c259;
     border-radius: 10px;
     margin-bottom: -16px;
@@ -10,4 +10,9 @@
     border-radius: 10px;
     height: 200px;
 
+} */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
 }

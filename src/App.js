@@ -8,7 +8,9 @@ import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Header from './Components/Header';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
-import LoggedinView from './Components/LoggedinFolder/LoggedinView';
+import LoggedinView from './Components/LoggedinPageComponents/LoggedinView';
+import WatchingView from './Components/LoggedinPageComponents/WatchingView';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -36,6 +38,10 @@ function App() {
             <Subscribe />
           </Route>
 
+          <Route path="/watchingview">
+            <WatchingView />
+          </Route>
+
           <Route path="/signup">
             <SignUp />
           </Route>
@@ -56,6 +62,7 @@ function App() {
 
         </Switch>
       </Router>
+      <Footer />
 
     </div>
   );
