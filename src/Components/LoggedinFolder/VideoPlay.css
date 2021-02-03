@@ -1,0 +1,8 @@
+.videoPlay {
+    flex: 0.7;
+    background-color: #e1e1e1;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;    
+}

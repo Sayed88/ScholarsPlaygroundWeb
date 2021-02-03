@@ -3,7 +3,7 @@ import './VideoSection.css';
 function VideoSection() {
     return (
         <div className="videoSection">
-            <h1>Video Section</h1>
+            <h3>Video Section</h3>
         </div>
     )
 }

@@ -1,0 +1,15 @@
+.videosListsSections {
+    display: flex;
+    justify-content: center;
+}
+
+.videosListsSections h6 {
+    background-color: #e3e3e3;
+    margin: 10px;
+    padding: 10px;
+}
+
+.videosListsSections h3 {
+    padding: 20px;
+    margin: 20px;
+}

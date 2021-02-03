@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    border-radius: 10px;
+    height: 60px;
+    margin: 1px;
 }
 
 .sidebarRow__icon {
@@ -11,18 +14,19 @@
 
 .sidebarRow__title {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 12px;
     font-weight: 500;
 }
 
 .sidebarRow:hover {
-    background-color: lightgray;
+    background-color: #e1e1e1;
     cursor: pointer;
+    border-right: 2px dashed #a2a2a2;
 }
 
 .sidebarRow.selected {
-    background-color: lightgray;
+    background-color: #e1e1e1;
 }
 
 .sidebarRow:hover > .sidebarRow__icon {
@@ -30,5 +34,7 @@
 }
 
 .sidebarRow:hover > .sidebarRow__title {
-    font-weight: bold;
+    /* font-weight: bold; */
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
 }

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Header from './Components/Header';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
+import LoggedinView from './Components/LoggedinFolder/LoggedinView';
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
           
           <Route path="/login">
             <Login />
+          </Route>
+
+          <Route path="/loggedinview">
+            <LoggedinView />
           </Route>
 
           <Route path="/">

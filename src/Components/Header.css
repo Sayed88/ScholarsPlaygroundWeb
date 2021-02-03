@@ -27,8 +27,8 @@
 .menuItem:hover {
     background-color: #f1f2f3;
     border-radius: 10px;
-    transform: scale(1.2);
-    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
     text-decoration: none;
 }
 

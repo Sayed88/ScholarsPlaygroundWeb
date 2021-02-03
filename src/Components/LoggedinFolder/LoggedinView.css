@@ -1,0 +1,22 @@
+.loggedinView {
+  text-align: center;
+  /* width: fit-content; */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.loggedinViewComponentsSection {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .userLogin {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .userLogin h5 {
+    margin-left: 10px;
+  }

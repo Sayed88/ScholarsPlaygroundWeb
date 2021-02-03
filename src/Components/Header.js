@@ -154,9 +154,11 @@ function Header() {
                                 />
                             </Form.Group>
 
-                            <Button block size="lg" type="submit" disabled={!validateForm()}>
-                                Login
-                            </Button>                        
+                                <Link to="loggedinview">
+                                    <Button block size="lg" type="submit" disabled={!validateForm()}>
+                                            Login
+                                    </Button>                        
+                                </Link>
                             
                             <p>
                                 <Link to="/forgotpassword">
