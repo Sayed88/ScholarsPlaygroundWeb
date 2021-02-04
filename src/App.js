@@ -24,12 +24,12 @@ function App() {
             <About />
           </Route>
 
-          <Route path="/partner-with-us">
+          <Route path="/partnerwithus">
             <Header />
             <PartnerWithUs />
           </Route>
 
-          <Route path="/work-with-us">
+          <Route path="/workwithus">
             <Header />
             <WorkWithUs />
           </Route>
@@ -39,7 +39,7 @@ function App() {
             <Subscribe />
           </Route>
 
-          <Route path="/watching-view">
+          <Route path="/watchingview">
             <WatchingView />
           </Route>
 
@@ -55,7 +55,7 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/logged-in-view">
+          <Route path="/loggedinview">
             <LoggedinView />
           </Route>
 
