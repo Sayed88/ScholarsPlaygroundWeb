@@ -11,6 +11,7 @@ import SignUp from './Components/SignUp';
 import LoggedinView from './Components/LoggedinPageComponents/LoggedinView';
 import WatchingView from './Components/LoggedinPageComponents/WatchingView';
 import Footer from './Components/Footer';
+import BrowseView from './Components/LoggedinPageComponents/BrowseView';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
 
           <Route path="/watching-view">
             <WatchingView />
+          </Route>
+
+          <Route path="/browseview">
+            <BrowseView />
           </Route>
 
           <Route path="/signup">

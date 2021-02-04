@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import VideoPlay from './VideoPlay';
 import "./LoggedinView.css";
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import VideosLists from './VideosLists';
+import UserLogin from './UserLogin';
 
 function LoggedinView() {
     return (
@@ -18,9 +18,14 @@ function LoggedinView() {
             <br />
             <h1>Logged in View Mode</h1>
             
-            <div className="userLogin">
-                <AccountCircleIcon fontSize="large"/>
-                <h5>John / Jane Doe's Playground</h5>
+            <div>
+                <UserLogin />
+            </div>
+
+            <div className="browseViewPage">
+                <Link to="/browseview">
+                    Click here to see the Browse View Page
+                </Link>
             </div>
 
             <div className="loggedinViewComponentsSection">

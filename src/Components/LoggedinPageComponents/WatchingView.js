@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import { Link } from 'react-router-dom';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import CommentsSection from './Comments';
+import UserLogin from './UserLogin';
 
 
 function WatchingView() {
@@ -19,6 +20,9 @@ function WatchingView() {
             </Link>
 
             <h1>Video Watching View page</h1>
+            
+            <div><UserLogin /></div>
+
             <div className="watchingVideoView">
                 <Sidebar />
 
@@ -32,6 +36,7 @@ function WatchingView() {
                             Video Description text here Video Description text here Video Description text here
                             Video Description text here Video Description text here Video Description text here
                         </p>
+                        <hr />
                         {/* <div className="commentsSection">
                             <h5><span>Comments</span></h5>
                             <div className="comments">
