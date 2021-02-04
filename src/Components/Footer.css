@@ -6,6 +6,12 @@
 }
 
 .icons {
+  text-decoration: none !important;
+
   margin: 3.5%;
   color: black;
+}
+
+.icons:hover {
+  color: #e14a9a;
 }

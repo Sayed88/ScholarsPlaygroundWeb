@@ -10,18 +10,18 @@ function Footer() {
     <div className="footer text-center">
       <Row className="m-3">
         <Col sm={6}>
-          <h3 className="mt-3">Social Media </h3>
-          <a className="icons" href="https://www.facebook.com/scholarsplayground/" target="_blank" rel="noreferrer"><FacebookIcon ></FacebookIcon></a>
-          <a className="icons" href="https://www.instagram.com/scholarsplayground/" target="_blank" rel="noreferrer"><InstagramIcon> Instagram</InstagramIcon></a>
-          <a className="icons" href="https://twitter.com/scholarsplygrnd" target="_blank" rel="noreferrer"><TwitterIcon></TwitterIcon></a>
+          <h2 className="mt-3">Social Media </h2>
+          <a className="icons" href="https://www.facebook.com/scholarsplayground/" target="_blank" rel="noreferrer"><FacebookIcon fontSize="large"></FacebookIcon></a>
+          <a className="icons" href="https://www.instagram.com/scholarsplayground/" target="_blank" rel="noreferrer"><InstagramIcon fontSize="large"> Instagram</InstagramIcon></a>
+          <a className="icons" href="https://twitter.com/scholarsplygrnd" target="_blank" rel="noreferrer"><TwitterIcon fontSize="large"></TwitterIcon></a>
 
         </Col>
-        <Col sm={6}><h3 className="mt-3">Legal</h3>
-          <h6>Terms of Use</h6>
-          <h6>Privacy Policy</h6>
+        <Col sm={6}><h2 className="mt-3">Legal</h2>
+          <h5>Terms of Use</h5>
+          <h5>Privacy Policy</h5>
         </Col>
       </Row>
-      <h5>©2021 Scholars' Playground</h5>
+      <a className="icons" href="/" target="_blank" rel="noreferrer"><h5>©2021 Scholars' Playground</h5></a>
       <Row>
 
       </Row>
