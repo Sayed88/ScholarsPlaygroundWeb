@@ -20,16 +20,16 @@ function App() {
 
         <Switch>
           <Route path="/about">
-            <Header />  
+            <Header />
             <About />
           </Route>
 
-          <Route path="/partnerwithus">
+          <Route path="/partner-with-us">
             <Header />
             <PartnerWithUs />
           </Route>
 
-          <Route path="/workwithus">
+          <Route path="/work-with-us">
             <Header />
             <WorkWithUs />
           </Route>
@@ -39,7 +39,7 @@ function App() {
             <Subscribe />
           </Route>
 
-          <Route path="/watchingview">
+          <Route path="/watching-view">
             <WatchingView />
           </Route>
 
@@ -50,12 +50,12 @@ function App() {
           <Route path="/signup">
             <SignUp />
           </Route>
-          
+
           <Route path="/login">
             <Login />
           </Route>
 
-          <Route path="/loggedinview">
+          <Route path="/logged-in-view">
             <LoggedinView />
           </Route>
 
