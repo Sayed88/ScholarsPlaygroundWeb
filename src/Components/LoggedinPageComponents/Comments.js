@@ -16,10 +16,10 @@ class CommentSection extends React.Component {
           <h3>Comments</h3>
           <Comments items={this.state.items} />
           <form onSubmit={this.handleSubmit}>
-            <button>
-                Your Comment
+            <button className="btn btn-outline-info">
+                add a comment
             </button>
-            <input style={{paddingRight: '200px'}}
+            <input class="form-control" style={{border: 'none', borderBottom: '1px solid'}}
               onChange={this.handleChange}
               value={this.state.text}
             />
