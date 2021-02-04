@@ -12,6 +12,7 @@ class CommentSection extends Component {
 
     
     render() {
+
       return (
         <div>
           <h3>Comments</h3>
@@ -61,9 +62,6 @@ class CommentSection extends Component {
           ))}
         </div>
       );
-    }
-    componentWillUnmount() {
-      clearInterval(this.interval);
     }
   }
 

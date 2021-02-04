@@ -1,11 +1,13 @@
 import React from 'react';
+import VideosComments from './VideosComments';
 import './VideosLists.css';
 
 
 function VideosLists() {
     return (
         <div className="videosLists">
-                <h3>Themed Videos</h3>
+            <VideosComments />
+                {/* <h3>Themed Videos</h3>
             <div className="videosListsSections">
                 <h6>Videos</h6>
                 <h6>Videos</h6>
@@ -17,7 +19,7 @@ function VideosLists() {
                 <h6>Videos</h6>
                 <h6>Videos</h6>
                 <h6>Videos</h6>
-            </div>
+            </div> */}
             <br />
             <br />
             <br />
