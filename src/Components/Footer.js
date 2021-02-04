@@ -1,23 +1,32 @@
 import React from 'react';
 import './Footer.css';
+import { Row, Col } from 'react-bootstrap';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 function Footer() {
-    return (
-        <div className="footer">
-            <div className="socials">
-                <h4>Social Media</h4>           
-                <p> <InstagramIcon />Instagram</p>
-                <p> <FacebookIcon />Facebook</p>
-            </div>
-            <div className="privacy">
-                <h4>Schoalrs Privacy</h4>
-                <p>Terms of Use</p>
-                <p>Privacy Policy</p>
-            </div>
-        </div>
-    );
+  return (
+    <div className="footer text-center">
+      <Row className="m-3">
+        <Col sm={6}>
+          <h2 className="mt-3">Social Media </h2>
+          <a className="icons" href="https://www.facebook.com/scholarsplayground/" target="_blank" rel="noreferrer"><FacebookIcon fontSize="large"></FacebookIcon></a>
+          <a className="icons" href="https://www.instagram.com/scholarsplayground/" target="_blank" rel="noreferrer"><InstagramIcon fontSize="large"> Instagram</InstagramIcon></a>
+          <a className="icons" href="https://twitter.com/scholarsplygrnd" target="_blank" rel="noreferrer"><TwitterIcon fontSize="large"></TwitterIcon></a>
+
+        </Col>
+        <Col sm={6}><h2 className="mt-3">Legal</h2>
+          <h5>Terms of Use</h5>
+          <h5>Privacy Policy</h5>
+        </Col>
+      </Row>
+      <a className="icons" href="/" target="_blank" rel="noreferrer"><h5>©2021 Scholars' Playground</h5></a>
+      <Row>
+
+      </Row>
+    </div>
+  )
 }
 
 export default Footer;

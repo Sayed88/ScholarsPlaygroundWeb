@@ -6,20 +6,20 @@ import AboutThePlayground from './AboutThePlayground';
 import { Link } from 'react-router-dom';
 
 function Dashboard() {
-    return (
-        <div className="dashboard">
-            <h1>Dashboard</h1>
-                <p>Click "
-            <Link to='/loggedinview'>
-                Here
+  return (
+    <div className="dashboard">
+      <h1>Dashboard</h1>
+      <p>Click "
+            <Link to='/logged-in-view'>
+          Here
             </Link>
                   " to open the Loggedin View page or Login to your account
                  </p>
-            <VideoSection />
-            <AboutThePlayground />
-            {/* <Footer /> */}
-        </div>
-    )
+      <VideoSection />
+      <AboutThePlayground />
+      {/* <Footer /> */}
+    </div>
+  )
 }
 
 export default Dashboard
