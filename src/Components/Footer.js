@@ -17,14 +17,12 @@ function Footer() {
 
         </Col>
         <Col sm={6}><h2 className="mt-3">Legal</h2>
-          <h5>Terms of Use</h5>
-          <h5>Privacy Policy</h5>
+          <a href="#"><h5>Terms of Use</h5></a>
+          <a href="#"><h5>Privacy Policy</h5></a>
         </Col>
       </Row>
-      <a className="icons" href="/" target="_blank" rel="noreferrer"><h5>©2021 Scholars' Playground</h5></a>
-      <Row>
+      <a className="icons" href="/" rel="noreferrer"><h5>©2021 Scholars' Playground</h5></a>
 
-      </Row>
     </div>
   )
 }

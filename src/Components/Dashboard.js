@@ -10,7 +10,7 @@ function Dashboard() {
     <div className="dashboard">
       <h1>Dashboard</h1>
       <p>Click "
-            <Link to='/logged-in-view'>
+            <Link to='/loggedinview'>
           Here
             </Link>
                   " to open the Loggedin View page or Login to your account

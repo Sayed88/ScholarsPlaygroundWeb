@@ -57,7 +57,7 @@ function Header() {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/partner-with-us' className="menuItem">
+              <Link to='/partnerwithus' className="menuItem">
                 <div className="NavItems">
                   <ThumbsUpDownIcon className="navIcn" />
                                     Partner With Us
@@ -65,7 +65,7 @@ function Header() {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/work-with-us' className="menuItem">
+              <Link to='/workwithus' className="menuItem">
                 <div className="navItems">
                   <GroupWorkIcon className="navIcn" />
                                     Work With Us
