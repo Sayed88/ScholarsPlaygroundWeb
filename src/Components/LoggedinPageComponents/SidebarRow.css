@@ -1,15 +1,15 @@
 .sidebarRow {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 10px;
-    height: 60px;
+    height: 80px;
     margin: 1px;
 }
 
 .sidebarRow__icon {
     color: #606060;
-    font-size: large !important;
+    font-size: 30px !important;
 }
 
 .sidebarRow__title {
@@ -23,6 +23,7 @@
     background-color: #e1e1e1;
     cursor: pointer;
     border-right: 2px dashed #a2a2a2;
+    /* padding-right: 33px; */
 }
 
 .sidebarRow.selected {
@@ -37,4 +38,4 @@
     font-weight: bold;
     /* transform: scale(1.2);
     transition: ease-in-out 0.3s; */
-}
+ }

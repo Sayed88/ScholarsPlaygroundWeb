@@ -53,12 +53,12 @@ class CommentSection extends Component {
   class Comments extends Component {
   
     render() {
-      let commentDate = new Date().toLocaleString();
+      // let commentDate = new Date().toLocaleString();
 
       return (
         <div>
           {this.props.items.map(item => (              
-            <p key={item.id}><AccountCircleIcon />{ " " + item.text + " ___ " + commentDate}</p>
+            <p key={item.id}><AccountCircleIcon />{ " " + item.text}</p>
           ))}
         </div>
       );

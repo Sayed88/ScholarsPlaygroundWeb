@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './Sidebar.css';
+import { Link } from 'react-router-dom';
 import SidebarRow from './SidebarRow';
 import HomeIcon from "@material-ui/icons/Home";
 import FolderOpenIcon from '@material-ui/icons/FolderOpen';
@@ -11,11 +12,21 @@ import SettingsIcon from '@material-ui/icons/Settings';
 function Sidebar() {
     return (
         <div className="sidebar">
-            <SidebarRow selected Icon={HomeIcon} title="Home" />
-            <SidebarRow Icon={FolderOpenIcon} title="Browse" />
-            <SidebarRow Icon={MoreHorizIcon} title="More" />            
-            <SidebarRow Icon={NotificationsIcon} title="Notifications" />
-            <SidebarRow Icon={SettingsIcon} title="Setting" />
+            <Link to="/home">
+                <SidebarRow selected Icon={HomeIcon} title="Home" />
+            </Link>
+            <Link to="/browse">
+                <SidebarRow Icon={FolderOpenIcon} title="Browse" />
+            </Link>
+            <Link to="/more">
+                <SidebarRow Icon={MoreHorizIcon} title="More" />
+            </Link>         
+            <Link to="notifications">
+                <SidebarRow Icon={NotificationsIcon} title="Notifications" />
+            </Link>
+            <Link to="setting">
+                <SidebarRow Icon={SettingsIcon}  title="Setting" />
+            </Link>
             <hr />
         </div>
     );

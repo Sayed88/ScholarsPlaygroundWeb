@@ -15,4 +15,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* overflow-y: scroll; */
 }
+
+/* .recommendedVideos__videos::-webkit-scrollbar {
+    display: none;
+} */

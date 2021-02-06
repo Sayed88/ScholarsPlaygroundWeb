@@ -27,7 +27,7 @@ function BrowseView() {
             </div>
             <div className="browseView">
                 <Sidebar />
-                <VideosComments />
+                <VideosComments className="browseViewFeed" />
             </div>
         </div>
     );

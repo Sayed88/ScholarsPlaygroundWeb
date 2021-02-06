@@ -1,8 +1,14 @@
 .watchingVideoView {
     display: flex;
-    margin: 10px;
-    padding: 10px;
+    /* margin: 10px;
+    padding: 10px; */
   }
+
+  .videoWatchingmode {
+    flex: 0.7;
+  }
+
+
 
 .video {
     flex: 0.7;
@@ -10,31 +16,33 @@
     height: 300px;
     border-radius: 10px;
     margin-left: 10px;
-    padding-left: 10px;    
+    padding-left: 10px;
 }
 
-.videoDescription, .commentsSection {
+.videoDescription {
   margin: 5px 10px 5px 20px;
 }
 
-.commentsSection span {
+
+/* ///////////////////////////////////// */
+/* .commentsSection span {
   border-bottom: 3px solid #a2a2a2;
-}
+} */
 
-.comments {
+/* .comments {
   display: flex;
-}
+} */
 
-.commentstext {
+/* .commentstext {
   margin-left: 10px;
-}
+} */
 
-.textInput {
+/* .textInput {
   margin-left: 30px;
   padding: 5px 100px;
   border: none;
   border-top: 1px solid #a2a2a2;
   border-bottom: 1px solid #a2a2a2;
   border-radius: 8px;
-}
+} */
 
