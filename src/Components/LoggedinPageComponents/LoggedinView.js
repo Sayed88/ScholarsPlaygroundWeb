@@ -5,15 +5,33 @@ import VideoPlay from './VideoPlay';
 import "./LoggedinView.css";
 import VideosLists from './VideosLists';
 import UserLogin from './UserLogin';
+import MyFilteringComponent from './MyFilteringComponent';
+import ViewListIcon from '@material-ui/icons/ViewList';
+
 
 function LoggedinView() {
+
+    // const countries =
+    // [
+
+    //     "Afghanistan",
+    //     "Åland Islands",
+    //     "Albania",
+    //     "Algeria"
+    // ];
+
     return (
         <div className="loggedinView">
 
 
-            <Link to="/dashboard">
-                <h3 className="dashlink">Dashboard</h3>
-            </Link>
+            {/* <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <ViewListIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div> */}
             <br />
             <br />
             <h1>Logged in View Mode</h1>
@@ -27,6 +45,10 @@ function LoggedinView() {
                     Click here to see the Browse View Page
                 </Link>
             </div>
+
+            {/* <div className="filter">
+                <MyFilteringComponent content={countries} />              
+            </div> */}
 
             <div className="loggedinViewComponentsSection">
                 <Sidebar />

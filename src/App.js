@@ -4,7 +4,7 @@ import About from './Components/About';
 import PartnerWithUs from './Components/PartnerWithUs';
 import WorkWithUs from './Components/WorkWithUs';
 import Subscribe from './Components/Subscribe';
-import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Header from './Components/Header';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
@@ -18,6 +18,8 @@ import More from './Components/LoggedinPageComponents/SidebarComponents/More';
 import Notifications from './Components/LoggedinPageComponents/SidebarComponents/Notifications';
 import Setting from './Components/LoggedinPageComponents/SidebarComponents/Setting';
 import Sidebar from './Components/LoggedinPageComponents/Sidebar';
+import ViewListIcon from '@material-ui/icons/ViewList';
+
 
 function App() {
   return (
@@ -46,10 +48,26 @@ function App() {
           </Route>
 
           <Route path="/watchingview">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <ViewListIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <WatchingView />
           </Route>
 
           <Route path="/browseview">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <ViewListIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <BrowseView />
           </Route>
 
@@ -82,6 +100,14 @@ function App() {
           </Route>
 
           <Route path="/loggedinview">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <ViewListIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <LoggedinView />
           </Route>
 

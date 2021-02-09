@@ -15,7 +15,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* overflow-y: scroll; */
+}
+
+.player {
+    margin: 20px;
 }
 
 /* .recommendedVideos__videos::-webkit-scrollbar {

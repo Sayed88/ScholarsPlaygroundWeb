@@ -32,8 +32,13 @@ function Header() {
 
   return (
     <div className="header">
+      <button id="nav-btn"class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarDiv"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-      <Navbar variant="light" expand="lg">
+      <Navbar variant="light" bg="light" fixed="top" position="relative" expand="lg">
         <Navbar.Brand>
           <Link to="/dashboard" className='logo'><h3>ScholarsPlayground</h3></Link>
         </Navbar.Brand>
@@ -44,40 +49,41 @@ function Header() {
             <Nav.Link>
               <Link to='/dashboard' className="menuItem">
                 <div className="NavItems">
-                  <ViewListIcon className="navIcn" />Dashboard
-                                </div>
+                  <ViewListIcon className="navIcn" />
+                  Dashboard
+                </div>
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link to='/about' className="menuItem">
                 <div className="NavItems">
                   <InfoIcon className="navIcn" />
-                                    About
-                                </div>
+                  About
+                </div>
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link to='/partnerwithus' className="menuItem">
                 <div className="NavItems">
                   <ThumbsUpDownIcon className="navIcn" />
-                                    Partner With Us
-                                </div>
+                  Partner With Us
+                </div>
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link to='/workwithus' className="menuItem">
                 <div className="navItems">
                   <GroupWorkIcon className="navIcn" />
-                                    Work With Us
-                                </div>
+                  Work With Us
+                </div>
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link to='/subscribe' className="menuItem">
                 <div className="navItems">
                   <SubscriptionsIcon className="navIcn" />
-                                Subscribe
-                            </div>
+                  Subscribe
+                </div>
               </Link>
             </Nav.Link>
           </Nav>
@@ -86,16 +92,16 @@ function Header() {
               <Link to="/signup" className='logo'>
                 <div className="navItems">
                   <PersonAddIcon className="navIcn" />
-                                    SignUp
-                                </div>
+                  SignUp
+                </div>
               </Link>
             </Button>
 
             <Button variant="outline-info mx-2" onClick={handleShow}>
               <div className="navItems">
                 <ExitToAppIcon className="navIcn" />
-                                Login
-                            </div>
+                Login
+              </div>
             </Button>
           </div>
         </Navbar.Collapse>

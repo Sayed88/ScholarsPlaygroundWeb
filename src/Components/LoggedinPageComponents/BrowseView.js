@@ -7,17 +7,24 @@ import FilteredList from './FilteredList';
 import VideosComments from './VideosComments';
 import UserLogin from './UserLogin';
 import Sidebar from './Sidebar';
+import ViewListIcon from '@material-ui/icons/ViewList';
+
 
 function BrowseView() {
     return (
         <div>
-            <Link to="dashboard">
-                <h5>Dashboard</h5>
-            </Link>
-            <Link to="loggedinview">
-                <KeyboardBackspaceIcon />
-                back to Loggedin View Page
-            </Link>
+           {/* <div className="dashLnk fixed-top bg-light" >
+                <Link to="/dashboard">                    
+                    <h4 className="dashlink"><ViewListIcon />Dashboard</h4>
+                </Link>
+            </div> */}
+
+            <div className="WatchingViewLnk">
+                <Link to="loggedinview">
+                    <KeyboardBackspaceIcon />
+                    back to Loggedin View Page
+                </Link>
+            </div>
             <h1>Browse View page</h1>
 
             <UserLogin />
