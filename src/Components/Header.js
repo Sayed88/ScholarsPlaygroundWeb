@@ -3,7 +3,7 @@ import './Header.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, } from 'react-router-dom';
 import { Button, Modal, Form, Nav, Navbar } from 'react-bootstrap';
-import ViewListIcon from '@material-ui/icons/ViewList';
+import DashboardIcon from '@material-ui/icons/Dashboard';
 import InfoIcon from '@material-ui/icons/Info';
 import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
@@ -32,12 +32,6 @@ function Header() {
 
   return (
     <div className="header">
-      <button id="nav-btn"class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarDiv"  aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
       <Navbar variant="light" bg="light" fixed="top" position="relative" expand="lg">
         <Navbar.Brand>
           <Link to="/dashboard" className='logo'><h3>ScholarsPlayground</h3></Link>
@@ -49,7 +43,7 @@ function Header() {
             <Nav.Link>
               <Link to='/dashboard' className="menuItem">
                 <div className="NavItems">
-                  <ViewListIcon className="navIcn" />
+                  <DashboardIcon className="navIcn" />
                   Dashboard
                 </div>
               </Link>
@@ -168,10 +162,10 @@ function Header() {
 
               <p>
                 <Link to="/forgotpassword">
-                  Forgot Password?
-                                </Link>
+                  Forgot Password? / Reset Password
+                </Link>
                 <br />
-                                New to the Playground? <Link to="/signup">SignUp Here</Link>
+                  New to the Playground? <Link to="/signup">SignUp Here</Link>
               </p>
             </Form>
           </Modal.Body>

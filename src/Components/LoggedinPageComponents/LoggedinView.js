@@ -11,14 +11,19 @@ import ViewListIcon from '@material-ui/icons/ViewList';
 
 function LoggedinView() {
 
-    // const countries =
-    // [
-
-    //     "Afghanistan",
-    //     "Åland Islands",
-    //     "Albania",
-    //     "Algeria"
-    // ];
+    const countries = [
+        'Afghanistan',
+        'Albania',
+        'Algeria',
+        'Andorra',
+        'Angola',
+        'Antigua and Barbuda',
+        'Argentina',
+        'Armenia',
+        'Australia',
+        'Austria',
+        'Azerbaijan',
+    ];
 
     return (
         <div className="loggedinView">
@@ -32,8 +37,8 @@ function LoggedinView() {
                     </h4>
                 </Link>
             </div> */}
-            <br />
-            <br />
+            {/* <br /> */}
+            {/* <br /> */}
             <h1>Logged in View Mode</h1>
             
             <div>
@@ -56,7 +61,13 @@ function LoggedinView() {
             </div>
             <div className="videosListsSection">
                 <VideosLists />
-            </div>            
+            </div>
+
+            <div className="uploadSection">
+                <h5>Upload Your Video Here</h5> <hr /> <br />
+                <input type="file"  id="inptFl"/>
+                <p>Need Confirmation if Upload Video Section is Necessery?</p>
+            </div>
         </div>
     )
 }

@@ -18,7 +18,7 @@ import More from './Components/LoggedinPageComponents/SidebarComponents/More';
 import Notifications from './Components/LoggedinPageComponents/SidebarComponents/Notifications';
 import Setting from './Components/LoggedinPageComponents/SidebarComponents/Setting';
 import Sidebar from './Components/LoggedinPageComponents/Sidebar';
-import ViewListIcon from '@material-ui/icons/ViewList';
+import DashboardIcon from '@material-ui/icons/Dashboard';
 
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
           <div className="fixed-top bg-light">
                 <Link to="/dashboard">
                     <h4 className="dashlink">
-                        <ViewListIcon />
+                        <DashboardIcon />
                         Dashboard
                     </h4>
                 </Link>
@@ -63,7 +63,7 @@ function App() {
           <div className="fixed-top bg-light">
                 <Link to="/dashboard">
                     <h4 className="dashlink">
-                        <ViewListIcon />
+                        <DashboardIcon />
                         Dashboard
                     </h4>
                 </Link>
@@ -72,22 +72,62 @@ function App() {
           </Route>
 
           <Route path="/home">
+          <div className="fixed-top bg-light ">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon  />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <Home />
           </Route>
 
           <Route path="/browse">
+            <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <Browse />
           </Route>
 
           <Route path="/more">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <More />
           </Route>
 
           <Route path="/notifications">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <Notifications />
           </Route>
 
           <Route path="/setting">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
             <Setting />
           </Route>
 
@@ -103,7 +143,7 @@ function App() {
           <div className="fixed-top bg-light">
                 <Link to="/dashboard">
                     <h4 className="dashlink">
-                        <ViewListIcon />
+                        <DashboardIcon />
                         Dashboard
                     </h4>
                 </Link>

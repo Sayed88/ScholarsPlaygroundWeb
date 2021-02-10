@@ -1,11 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './SidebarPagesStyle.css';
+import Sidebar from '../Sidebar';
+import UserLogin from '../UserLogin';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+
 
 function Browse() {
     return (
-        <div>
-            <h1>Browse page</h1>
+        <div className="browse mt-5">
+            <div className="WatchingViewLnk">
+                <Link to="loggedinview">
+                    <KeyboardBackspaceIcon />
+                    back to Loggedin View Page
+                </Link>
+            </div>
+            <UserLogin />
+            <div className="browseSections">
+                {/* <h1>Browse page</h1> */}
+                <Sidebar />
+                <div className="browseContent">
+                    <h1>Browse Page contents </h1>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
 export default Browse;

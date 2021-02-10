@@ -1,0 +1,12 @@
+.browseSections, .homeSections, .moreSections, .notificationsSections, .settingSections {
+    display: flex;
+}
+
+.browseContent, .homeContent, .moreContent, .notificationsContent, .settingContent {
+    flex: 0.7;
+    margin-top: 20px;    
+}
+
+.browseContent h1, .homeContent h1, .moreContent h1, .notificationsContent h1, .settingContent h1 {
+    border-bottom: 5px solid #f3f3f3;
+}

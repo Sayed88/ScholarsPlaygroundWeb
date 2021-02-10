@@ -7,12 +7,13 @@ import FilteredList from './FilteredList';
 import VideosComments from './VideosComments';
 import UserLogin from './UserLogin';
 import Sidebar from './Sidebar';
+import SearchBar from './SearchBar';
 import ViewListIcon from '@material-ui/icons/ViewList';
 
 
 function BrowseView() {
     return (
-        <div>
+        <div className="browseViewPage"> 
            {/* <div className="dashLnk fixed-top bg-light" >
                 <Link to="/dashboard">                    
                     <h4 className="dashlink"><ViewListIcon />Dashboard</h4>
@@ -28,10 +29,16 @@ function BrowseView() {
             <h1>Browse View page</h1>
 
             <UserLogin />
-            <div className="filter">
+
+            {/* <div className="filter">
                 <p> Filter <FilterListIcon /></p>
+            </div> */}
                 {/* <FilteredList /> */}
-            </div>
+
+                <div className="searchInput">
+                    <SearchBar />
+                </div>
+                
             <div className="browseView">
                 <Sidebar />
                 <VideosComments className="browseViewFeed" />

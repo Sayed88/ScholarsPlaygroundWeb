@@ -1,3 +1,8 @@
+
+.browseViewPage {
+    flex: 0.7;
+}
+
 .browseView {
     display: flex;
     /* margin: 10px;
@@ -11,4 +16,3 @@
 .WatchingViewLnk {
     margin-top: 60px;
 }
-
