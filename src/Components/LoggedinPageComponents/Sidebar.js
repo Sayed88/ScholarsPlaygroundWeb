@@ -12,22 +12,22 @@ import SettingsIcon from '@material-ui/icons/Settings';
 function Sidebar() {
     return (
         <div className="sidebar">
-            <Link to="/home">
-                <SidebarRow selected Icon={HomeIcon} title="Home" />
+            <Link to="/home" className="sideLinks">
+                <SidebarRow className="sidRw" selected Icon={HomeIcon} title="Home" />
             </Link>
-            <Link to="/browse">
+            <Link to="/browse" className="sideLinks">
                 <SidebarRow Icon={FolderOpenIcon} title="Browse" />
             </Link>
-            <Link to="/more">
+            <Link to="/more" className="sideLinks">
                 <SidebarRow Icon={MoreHorizIcon} title="More" />
             </Link>         
-            <Link to="notifications">
+            <Link to="notifications" className="sideLinks">
                 <SidebarRow Icon={NotificationsIcon} title="Notifications" />
             </Link>
-            <Link to="setting">
+            <Link to="setting" className="sideLinks">
                 <SidebarRow Icon={SettingsIcon}  title="Setting" />
             </Link>
-            <hr />
+            {/* <hr /> */}
         </div>
     );
 }

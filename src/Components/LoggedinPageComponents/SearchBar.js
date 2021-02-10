@@ -15,16 +15,14 @@ function SearchBar() {
             {/* <SearchIcon />
             <input type="text" placeholder="Search" className="form-control" /> */}
             <div className="searchBar">
-
-
-            <InputBase
-                className=""
-                placeholder="Search"
-                />
-            <IconButton type="submit" className="">
-                <SearchIcon />
-            </IconButton>
-                </div>
+                <InputBase
+                    className=""
+                    placeholder="Search"
+                    />
+                <IconButton type="submit" className="">
+                    <SearchIcon />
+                </IconButton>
+            </div>
         </div>
     );
 }

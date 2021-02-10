@@ -16,3 +16,27 @@
 .WatchingViewLnk {
     margin-top: 60px;
 }
+
+.filterSearch {
+    display: flex;
+    align-items: center;
+    /* margin-left: 25%; */
+    /* margin-bottom: 2%; */
+    justify-content: space-between;
+    /* margin-right: 2%; */
+    margin: 2% 5% 2% 25%;
+    /* border-bottom: 3px solid #f2f2f2; */
+}
+
+.btmLn {
+    border-bottom: 3px solid #f9f9f9;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* .filterSearch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    float: right;
+} */

@@ -15,6 +15,7 @@
     /* border-right: 1px solid #e1e1e1; */
     /* margin-right: 10px; */
     /* position: sticky; */
+    margin-top: 0;
 }
 
 .sidebar > hr {
@@ -30,5 +31,5 @@
 }
 
 .sideLinks {
-    font-size: large;
+    text-align: center;
 }

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     margin-left: 30px;
-    border-top: 1px solid #f1f1f1;
+    border-top: 2px solid #f9f9f9;
   }
 
   .userLogin h5 {
