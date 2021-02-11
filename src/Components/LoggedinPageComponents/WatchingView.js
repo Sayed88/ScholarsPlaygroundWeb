@@ -47,7 +47,7 @@ function WatchingView() {
                     {/* <h3 className="video">Video</h3> */}
 
                     <div className="videoDescription">
-                        <h5>Video Title</h5>
+                        <h5>Video Description</h5>
                         <p className="videoText">
                             Video Description text here Video Description text here Video Description text here
                             Video Description text here Video Description text here Video Description text here
@@ -83,6 +83,5 @@ function WatchingView() {
         </div>
     );
 }
-
 
 export default WatchingView;
