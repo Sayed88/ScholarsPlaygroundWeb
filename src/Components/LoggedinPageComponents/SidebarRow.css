@@ -14,17 +14,14 @@
 }
 
 .sidebarRow__title {
-    /* flex: 1; */
     margin-left: 10px;
     font-size: 14px;
-    /* font-weight: 500; */
 }
 
 .sidebarRow:hover {
     background-color: #e1e1e1;
     cursor: pointer;
     border-right: 2px dashed #a2a2a2;
-    /* padding-right: 33px; */
 }
 
 .sidebarRow.selected {
@@ -37,6 +34,4 @@
 
 .sidebarRow:hover > .sidebarRow__title {
     font-weight: bold;
-    /* transform: scale(1.2);
-    transition: ease-in-out 0.3s; */
- }
+}

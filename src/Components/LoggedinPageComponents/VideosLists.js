@@ -6,20 +6,7 @@ import './VideosLists.css';
 function VideosLists() {
     return (
         <div className="videosLists">
-            <VideosComments />
-                {/* <h3>Themed Videos</h3>
-            <div className="videosListsSections">
-                <h6>Videos</h6>
-                <h6>Videos</h6>
-                <h6>Videos</h6>
-            </div>
-
-                <h3>Latest Additions</h3>
-            <div className="videosListsSections">
-                <h6>Videos</h6>
-                <h6>Videos</h6>
-                <h6>Videos</h6>
-            </div> */}
+            <VideosComments />               
             <br />
             <br />
             <br />

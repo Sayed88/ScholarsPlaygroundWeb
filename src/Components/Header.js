@@ -4,10 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, } from 'react-router-dom';
 import { Button, Modal, Form, Nav, Navbar } from 'react-bootstrap';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import InfoIcon from '@material-ui/icons/Info';
+import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
-import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Image from './Scholars PNG.png';
@@ -52,10 +51,10 @@ function Header() {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/about' className="menuItem">
+              <Link to='/plans' className="menuItem">
                 <div className="navItems">
-                  <InfoIcon className="navIcn" />
-                  About
+                  <DynamicFeedIcon className="navIcn" />
+                  Plans
                 </div>
               </Link>
             </Nav.Link>
@@ -72,14 +71,6 @@ function Header() {
                 <div className="navItems">
                   <GroupWorkIcon className="navIcn" />
                   Work With Us
-                </div>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to='/subscribe' className="menuItem">
-                <div className="navItems">
-                  <SubscriptionsIcon className="navIcn" />
-                  Subscribe
                 </div>
               </Link>
             </Nav.Link>
@@ -104,32 +95,6 @@ function Header() {
         </Navbar.Collapse>
       </Navbar>
 
-
-      {/* <nav className="navBar">
-                <ul className="menuItem">
-                    <li>
-                        <Link to="/dashboard" className="underline">Dashboard</Link>
-                    </li>
-                    <li>
-                        <Link to='/about' className="underline">About</Link>
-                    </li>
-                    <li>
-                        <Link to='/partnerwithus' className="underline">Partner With Us</Link>
-                    </li>
-                    <li>
-                        <Link to='/workwithus' className="underline">Work With Us</Link>
-                    </li>
-                    <li>
-                        <Link to='/subscribe' className="underline">Subscribe</Link>
-                    </li>
-                </ul>     
-            </nav> */}
-
-      {/* <div className="loginpage">
-                <Link to="/login" className="logbtn">
-                    <h1>Login</h1>
-                </Link>
-            </div> */}
 
       <div className="modalBtn">
         <Modal show={show} onHide={handleClose}>

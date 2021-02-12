@@ -17,7 +17,6 @@ function More() {
             </div>
             <UserLogin />
             <div className="moreSections">
-                {/* <h1>More page</h1> */}
                 <Sidebar />
                 <div className="moreContent">
                     <h1>More Page Contents</h1>

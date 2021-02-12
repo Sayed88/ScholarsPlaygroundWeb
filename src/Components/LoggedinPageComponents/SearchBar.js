@@ -12,13 +12,11 @@ function SearchBar() {
 
     return (
         <div className="searchBarComponent border-bottom p-2">
-            {/* <SearchIcon />
-            <input type="text" placeholder="Search" className="form-control" /> */}
             <div className="searchBar">
                 <InputBase
                     className=""
                     placeholder="Search"
-                    />
+                />
                 <IconButton type="submit" className="">
                     <SearchIcon />
                 </IconButton>

@@ -17,7 +17,6 @@ function Setting() {
             </div>
             <UserLogin />
             <div className="settingSections">
-                {/* <h1>Setting Page</h1> */}
                 <Sidebar />
                 <div className="settingContent">
                     <h1>Setting Page Contents</h1>

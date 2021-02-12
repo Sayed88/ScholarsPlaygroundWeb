@@ -83,12 +83,10 @@ function SignUp() {
                     </Link>
                     <p>Already a Scholar <Link to="/login"> Login Here</Link></p>
                 </Form>
-
-
             </div>
 
         </div>
-    )
+    );
 
 }
 

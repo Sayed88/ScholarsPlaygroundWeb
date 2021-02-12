@@ -17,7 +17,6 @@ function Notifications() {
             </div>
             <UserLogin />
             <div className="notificationsSections">
-                {/* <h1>Notifications page</h1> */}
                 <Sidebar />
                 <div className="notificationsContent">
                     <h1>Notifications Page Content</h1>

@@ -30,7 +30,7 @@ function Footer() {
         </Col>
       </Row>
       
-      <Link to="/dashboard">
+      <Link to="/">
         <h5>©2021 Scholars' Playground</h5>
       </Link>
 

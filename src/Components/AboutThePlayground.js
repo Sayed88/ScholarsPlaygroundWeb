@@ -14,7 +14,7 @@ function AboutThePlayground() {
                 for youth aged K-12th grade, at the click of a button.
             </p>
         </div>
-    )
+    );
 }
 
 export default AboutThePlayground;

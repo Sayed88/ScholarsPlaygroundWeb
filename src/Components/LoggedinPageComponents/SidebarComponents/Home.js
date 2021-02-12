@@ -17,7 +17,6 @@ function Home() {
             </div>
             <UserLogin />
             <div className="homeSections">
-                {/* <h1>Home Page</h1> */}
                 <Sidebar />
                 <div className="homeContent">
                     <h1>Home Page Contents</h1>

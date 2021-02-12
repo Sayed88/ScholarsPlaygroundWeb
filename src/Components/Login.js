@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Login.css';
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
 
@@ -50,8 +49,6 @@ function Login() {
                             Login
                         </Button>
                     </Link>
-    
-                
                     
                     <p>
                         <Link to="/forgotpassword">
@@ -63,7 +60,7 @@ function Login() {
                 </Form>
             </div>
         </div>
-    )
+    );
 }
 
 export default Login;

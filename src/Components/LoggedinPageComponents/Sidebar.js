@@ -27,7 +27,6 @@ function Sidebar() {
             <Link to="setting" className="sideLinks">
                 <SidebarRow Icon={SettingsIcon}  title="Setting" />
             </Link>
-            {/* <hr /> */}
         </div>
     );
 }

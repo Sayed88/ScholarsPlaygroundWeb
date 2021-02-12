@@ -17,7 +17,6 @@ function Browse() {
             </div>
             <UserLogin />
             <div className="browseSections">
-                {/* <h1>Browse page</h1> */}
                 <Sidebar />
                 <div className="browseContent">
                     <h1>Browse Page contents </h1>
