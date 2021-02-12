@@ -10,7 +10,7 @@ function Browse() {
     return (
         <div className="browse mt-5">
             <div className="WatchingViewLnk">
-                <Link to="loggedinview">
+                <Link to="loggedin_view">
                     <KeyboardBackspaceIcon />
                     back to Loggedin View Page
                 </Link>

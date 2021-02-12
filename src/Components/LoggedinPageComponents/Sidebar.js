@@ -14,7 +14,7 @@ function Sidebar() {
         <div className="sidebar">
             <Link to="/home" className="sideLinks">
                 <SidebarRow className="sidRw" selected Icon={HomeIcon} title="Home" />
-            </Link>
+            </Link> 
             <Link to="/browse" className="sideLinks">
                 <SidebarRow Icon={FolderOpenIcon} title="Browse" />
             </Link>

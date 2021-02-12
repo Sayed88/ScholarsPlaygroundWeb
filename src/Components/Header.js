@@ -10,6 +10,9 @@ import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import Image from './Scholars PNG.png';
+
+
 
 function Header() {
 
@@ -34,7 +37,7 @@ function Header() {
     <div className="header">
       <Navbar variant="light" bg="light" fixed="top" position="relative" expand="lg">
         <Navbar.Brand>
-          <Link to="/dashboard" className='logo'><h3>ScholarsPlayground</h3></Link>
+          <Link to="/" className='logo'><img className="LgImg" src={Image} alt="ScholarsPlayground Logo" /></Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="nav-toggle" />
         <Navbar.Collapse id="nav-toggle">
@@ -42,7 +45,7 @@ function Header() {
           <Nav className=" mr-auto navb">
             <Nav.Link>
               <Link to='/dashboard' className="menuItem">
-                <div className="NavItems">
+                <div className="navItems">
                   <DashboardIcon className="navIcn" />
                   Dashboard
                 </div>
@@ -50,22 +53,22 @@ function Header() {
             </Nav.Link>
             <Nav.Link>
               <Link to='/about' className="menuItem">
-                <div className="NavItems">
+                <div className="navItems">
                   <InfoIcon className="navIcn" />
                   About
                 </div>
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/partnerwithus' className="menuItem">
-                <div className="NavItems">
+              <Link to='/partner_withus' className="menuItem">
+                <div className="navItems">
                   <ThumbsUpDownIcon className="navIcn" />
                   Partner With Us
                 </div>
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/workwithus' className="menuItem">
+              <Link to='/work_withus' className="menuItem">
                 <div className="navItems">
                   <GroupWorkIcon className="navIcn" />
                   Work With Us
@@ -84,15 +87,15 @@ function Header() {
           <div className="sigbtn">
             <Button variant="outline-warning">
               <Link to="/signup" className='logo'>
-                <div className="navItems">
+                <div className="">
                   <PersonAddIcon className="navIcn" />
                   SignUp
                 </div>
               </Link>
             </Button>
 
-            <Button variant="outline-info mx-2" onClick={handleShow}>
-              <div className="navItems">
+            <Button variant="outline-primary mx-2" onClick={handleShow}>
+              <div className="">
                 <ExitToAppIcon className="navIcn" />
                 Login
               </div>
@@ -154,14 +157,14 @@ function Header() {
                 />
               </Form.Group>
 
-              <Link to="loggedinview">
+              <Link to="loggedin_view">
                 <Button block size="lg" type="submit" disabled={!validateForm()}>
                   Login
-                                    </Button>
+                </Button>
               </Link>
 
               <p>
-                <Link to="/forgotpassword">
+                <Link to="/reset_password">
                   Forgot Password? / Reset Password
                 </Link>
                 <br />

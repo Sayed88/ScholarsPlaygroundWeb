@@ -73,7 +73,7 @@ function SignUp() {
                         />
                     </Form.Group>
 
-                    <Link to="/loggedinview">
+                    <Link to="/loggedin_view">
                         <Button block size="lg" type="submit" disabled={!validateForm()}>
                             SignUp
                         </Button>

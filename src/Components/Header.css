@@ -1,5 +1,11 @@
 .header {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+}
+
+.LgImg {
+    width: 150px;
+    padding: 0;
+    margin: 0;
 }
 
 .menuItem {
@@ -10,9 +16,16 @@
     border-radius: 5px;
 }
 
-.NavItems {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.navItems {
     display: flex;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navItems:hover {
+    color: #1302e6;
 }
 
 .logo:hover {
@@ -24,7 +37,7 @@
 }
 
 .navIcn:hover {
-    color: red;
+    color: #db1377;
 }
 
 .menuItem:hover {

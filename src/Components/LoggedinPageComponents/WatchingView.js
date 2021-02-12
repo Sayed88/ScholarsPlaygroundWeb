@@ -21,7 +21,7 @@ function WatchingView() {
             </div> */}
 
             <div className="WatchingViewLnk">
-                <Link to="/loggedinview">
+                <Link to="/loggedin_view">
                     <KeyboardBackspaceIcon />
                     Back to Loggedin View Page
                 </Link>

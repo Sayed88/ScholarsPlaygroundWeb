@@ -39,14 +39,14 @@ function LoggedinView() {
             </div> */}
             {/* <br /> */}
             {/* <br /> */}
-            <h1>Logged in View Mode</h1>
+            <h1>Logged in View Mode ___ Welcom Back Sholar</h1>
             
             <div>
                 <UserLogin />
             </div>
 
             <div className="browseViewPage">
-                <Link to="/browseview">
+                <Link to="/browse_view">
                     Click here to see the Browse View Page
                 </Link>
             </div>

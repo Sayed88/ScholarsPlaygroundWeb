@@ -11,7 +11,7 @@ function Dashboard() {
     <div className="dashboard">
       <h1>Dashboard</h1>
 
-      <p>Click " <Link to='/loggedinview'>Here</Link> " to open the Loggedin View page or Login to your account</p>
+      <p>Click " <Link to='/loggedin_view'>Here</Link> " to open the Loggedin View page or Login to your account</p>
 
       <div className="dashboardVideo">
         <ReactPlayer

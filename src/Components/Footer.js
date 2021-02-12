@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -17,11 +18,21 @@ function Footer() {
 
         </Col>
         <Col sm={6}><h2 className="mt-3">Legal</h2>
-          <a href="#"><h5>Terms of Use</h5></a>
-          <a href="#"><h5>Privacy Policy</h5></a>
+
+        <Link to="terms_of_use">
+          <h5>Terms of Use</h5>
+        </Link>
+
+        <Link to="privacy_policy">
+          <h5>Privacy Policy</h5>
+        </Link>
+
         </Col>
       </Row>
-      <a className="icons" href="/" rel="noreferrer"><h5>©2021 Scholars' Playground</h5></a>
+      
+      <Link to="/dashboard">
+        <h5>©2021 Scholars' Playground</h5>
+      </Link>
 
     </div>
   )

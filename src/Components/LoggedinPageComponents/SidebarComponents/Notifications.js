@@ -10,7 +10,7 @@ function Notifications() {
     return (
         <div className="notifications mt-5">
             <div className="WatchingViewLnk">
-                <Link to="loggedinview">
+                <Link to="loggedin_view">
                     <KeyboardBackspaceIcon />
                     back to Loggedin View Page
                 </Link>

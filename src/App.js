@@ -19,6 +19,10 @@ import Notifications from './Components/LoggedinPageComponents/SidebarComponents
 import Setting from './Components/LoggedinPageComponents/SidebarComponents/Setting';
 import Sidebar from './Components/LoggedinPageComponents/Sidebar';
 import DashboardIcon from '@material-ui/icons/Dashboard';
+import TermsOfUse from './Components/TermsOfUse';
+import PrivacyPolicy from './Components/PrivacyPolicy';
+import ForgotPassword from './Components/ResetPassword';
+import ResetPassword from './Components/ResetPassword';
 
 
 function App() {
@@ -30,24 +34,28 @@ function App() {
           <Route path="/about">
             <Header />
             <About />
+            <Footer />
           </Route>
 
-          <Route path="/partnerwithus">
+          <Route path="/partner_withus">
             <Header />
             <PartnerWithUs />
+            <Footer />
           </Route>
 
-          <Route path="/workwithus">
+          <Route path="/work_withus">
             <Header />
             <WorkWithUs />
+            <Footer />
           </Route>
 
           <Route path="/subscribe">
             <Header />
             <Subscribe />
+            <Footer />
           </Route>
 
-          <Route path="/watchingview">
+          <Route path="/watching_view">
           <div className="fixed-top bg-light">
                 <Link to="/dashboard">
                     <h4 className="dashlink">
@@ -57,9 +65,10 @@ function App() {
                 </Link>
             </div>
             <WatchingView />
+            <Footer />
           </Route>
 
-          <Route path="/browseview">
+          <Route path="/browse_view">
           <div className="fixed-top bg-light">
                 <Link to="/dashboard">
                     <h4 className="dashlink">
@@ -69,6 +78,20 @@ function App() {
                 </Link>
             </div>
             <BrowseView />
+            <Footer />
+          </Route>
+
+          <Route path="/loggedin_view">
+          <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
+            <LoggedinView />
+            <Footer />
           </Route>
 
           <Route path="/home">
@@ -81,6 +104,7 @@ function App() {
                 </Link>
             </div>
             <Home />
+            <Footer />
           </Route>
 
           <Route path="/browse">
@@ -93,6 +117,7 @@ function App() {
                 </Link>
             </div>
             <Browse />
+            <Footer />
           </Route>
 
           <Route path="/more">
@@ -105,6 +130,7 @@ function App() {
                 </Link>
             </div>
             <More />
+            <Footer />
           </Route>
 
           <Route path="/notifications">
@@ -117,6 +143,7 @@ function App() {
                 </Link>
             </div>
             <Notifications />
+            <Footer />
           </Route>
 
           <Route path="/setting">
@@ -129,7 +156,38 @@ function App() {
                 </Link>
             </div>
             <Setting />
+            <Footer />
           </Route>
+
+          <Route path="/terms_of_use">
+            <div className="fixed-top bg-light">
+                <Link to="/dashboard">
+                    <h4 className="dashlink">
+                        <DashboardIcon />
+                        Dashboard
+                    </h4>
+                </Link>
+            </div>
+            <TermsOfUse />
+          </Route>
+
+          <Route path="/privacy_policy">
+            <div className="fixed-top bg-light">
+              <Link to="/dashboard">
+                <h4 className="dashlink">
+                  <DashboardIcon />
+                  Dashboard
+                </h4>
+              </Link>
+            </div>
+            <PrivacyPolicy />
+          </Route>
+
+          <Route path="/reset_password">
+            <ResetPassword />
+          </Route>
+
+
 
           <Route path="/signup">
             <SignUp />
@@ -139,27 +197,20 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/loggedinview">
-          <div className="fixed-top bg-light">
-                <Link to="/dashboard">
-                    <h4 className="dashlink">
-                        <DashboardIcon />
-                        Dashboard
-                    </h4>
-                </Link>
-            </div>
-            <LoggedinView />
-          </Route>
 
+       
           <Route path="/">
             <Header />
             <Dashboard />
+            <Footer />
           </Route>
 
 
         </Switch>
       </Router>
-      <Footer />
+      
+
+      
 
     </div>
   );

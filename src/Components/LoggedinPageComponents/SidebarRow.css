@@ -5,7 +5,7 @@
     border-radius: 10px;
     height: 80px;
     margin-top: 5px;
-    border-bottom: 1px solid rgb(73, 73, 175);
+    border-bottom: 1px solid #1302e6;
 }
 
 .sidebarRow__icon {
@@ -32,7 +32,7 @@
 }
 
 .sidebarRow:hover > .sidebarRow__icon {
-    color: red;
+    color: #db1377;
 }
 
 .sidebarRow:hover > .sidebarRow__title {

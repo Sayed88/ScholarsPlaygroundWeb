@@ -22,7 +22,7 @@ function BrowseView() {
             </div> */}
 
             <div className="WatchingViewLnk">
-                <Link to="loggedinview">
+                <Link to="loggedin_view">
                     <KeyboardBackspaceIcon />
                     back to Loggedin View Page
                 </Link>

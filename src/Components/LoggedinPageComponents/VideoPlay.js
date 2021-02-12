@@ -12,7 +12,7 @@ function VideoPlay() {
                     width="100%"
                 /> */}
             <h3>Video in Loggedin View</h3>
-            <Link to="/watchingview">
+            <Link to="/watching_view">
                 <p>Click here to go to Watching Video page</p>
             </Link>
         </div>

@@ -45,9 +45,11 @@ function Login() {
                         />
                     </Form.Group>
 
-                    <Button block size="lg" type="submit" disabled={!validateForm()}>
-                        Login
-                    </Button>
+                    <Link to="/loggedin_view">                    
+                        <Button block size="lg" type="submit" disabled={!validateForm()}>
+                            Login
+                        </Button>
+                    </Link>
     
                 
                     
