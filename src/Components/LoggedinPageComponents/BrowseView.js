@@ -19,7 +19,7 @@ function BrowseView() {
                 </Link>
             </div>
 
-            <h1>Browse View page</h1>
+            <h1>Browse View page ___ Welcome Back Scholar</h1>
             <div className="user">
                 <UserLogin />
             </div>
