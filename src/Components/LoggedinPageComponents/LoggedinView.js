@@ -13,7 +13,7 @@ function LoggedinView() {
     return (
         <div className="loggedinView">
 
-            <h1>Logged in View Mode ___ Welcom Back Sholar</h1>
+            <h1>Logged in View Mode</h1>
             
             <div>
                 <UserLogin />

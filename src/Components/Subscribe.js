@@ -6,7 +6,7 @@ function Subscribe() {
     return (
         <div className="col-md-6 col-sm-12 mx-auto">
             <Card className="text-center">
-                <Card.Header>Subscribe</Card.Header>
+                <Card.Header><b>SUBSCRIPTION </b></Card.Header>
                 <Card.Body>
                     <Card.Title>Subscribe to Receive Playground Updates</Card.Title>
                     <Form>
