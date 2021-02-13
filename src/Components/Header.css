@@ -1,87 +1,90 @@
 .header {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .LgImg {
-    width: 150px;
-    padding: 0;
-    margin: 0;
+  width: 150px;
+  padding: 0;
+  margin: 0;
 }
 
 .menuItem {
-    display: flex;
-    width: fit-content;
-    padding-inline: 10px;
-    font-size: larger;
-    border-radius: 5px;
+  display: flex;
+  width: fit-content;
+  padding-inline: 10px;
+  font-size: larger;
+  border-radius: 5px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+.main-nav {
+  box-shadow: 1px 0px 12px 0px black;
+}
 
 .navItems {
-    display: flex;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 .navItems:hover {
-    color: #1302e6;
+  color: #1302e6;
 }
 
 .logo:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navIcn {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .navIcn:hover {
-    color: #db1377;
+  color: #db1377;
 }
 
 .menuItem:hover {
-    background-color: #f1f2f3;
-    border-radius: 10px;
-    transform: scale(1.1);
-    transition: ease-in-out 0.4s;
-    text-decoration: none;
+  background-color: #f1f2f3;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: ease-in-out 0.4s;
+  text-decoration: none;
 }
 
 .navb {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 .menuItem li {
-    list-style: none;
-    margin-right: 30px;
-    padding: 10px;
-    font-size: large;
-    width: fit-content;
-
+  list-style: none;
+  margin-right: 30px;
+  padding: 10px;
+  font-size: large;
+  width: fit-content;
 }
 
 .menuItem li:hover {
-    background-color: #ece6e6af;
-    border-radius: 20px;
+  background-color: #ece6e6af;
+  border-radius: 20px;
 }
 
 .underline {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .loginpage {
-    float: right;
-    margin-right: 80px;
+  float: right;
+  margin-right: 80px;
 }
 
 .logbtn {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .modalBtn {
-    float: right;
+  float: right;
 }
 
 .sigbtn {
-    display: flex;
+  display: flex;
 }
