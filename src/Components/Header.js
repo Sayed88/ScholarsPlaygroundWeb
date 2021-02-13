@@ -34,7 +34,7 @@ function Header() {
 
   return (
     <div className="header">
-      <Navbar variant="light" bg="light" fixed="top" position="relative" expand="lg">
+      <Navbar className="main-nav" variant="light" bg="light" fixed="top" position="relative" expand="lg">
         <Navbar.Brand>
           <Link to="/" className='logo'><img className="LgImg" src={Image} alt="ScholarsPlayground Logo" /></Link>
         </Navbar.Brand>
