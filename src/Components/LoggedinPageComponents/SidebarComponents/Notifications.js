@@ -8,7 +8,7 @@ import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 function Notifications() {
     return (
-        <div className="notifications mt-5">
+        <div className="notifications mt-5">            
             <div className="WatchingViewLnk">
                 <Link to="loggedin_view">
                     <KeyboardBackspaceIcon />
@@ -19,7 +19,7 @@ function Notifications() {
             <div className="notificationsSections">
                 <Sidebar />
                 <div className="notificationsContent">
-                    <h1>Notifications Page Content</h1>
+                    <h1>Notifications Page Contents</h1>
                 </div>
             </div>
         </div>

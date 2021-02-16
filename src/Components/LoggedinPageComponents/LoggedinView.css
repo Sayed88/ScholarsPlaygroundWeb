@@ -10,3 +10,8 @@
   .uploadSection {
     margin-left: 120px;
   }
+
+  .signOut {
+    float: right;
+    margin-right: 10px;
+  }

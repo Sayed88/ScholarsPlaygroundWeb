@@ -6,12 +6,11 @@ import VideosComments from './VideosComments';
 import UserLogin from './UserLogin';
 import Sidebar from './Sidebar';
 import SearchBar from './SearchBar';
-import { Dropdown } from 'react-bootstrap';
+import { Dropdown, Form } from 'react-bootstrap';
 function BrowseView() {
 
     return (
-        <div className="browseViewPage"> 
-
+        <div className="browseViewPage">
             <div className="WatchingViewLnk">
                 <Link to="loggedin_view">
                     <KeyboardBackspaceIcon />
@@ -19,40 +18,29 @@ function BrowseView() {
                 </Link>
             </div>
 
-            <h1>Browse View page ___ Welcome Back Scholar</h1>
+            <h1>Browse View page ___ Educator</h1>
             <div className="user">
                 <UserLogin />
             </div>
             
             <div className="btmLn">
-                <div className="filterSearch">
-                    <div className="filter">
-                        <Dropdown>
-                            <Dropdown.Toggle variant="light">
-                                Filter
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/reset">All</Dropdown.Item>
-                                <Dropdown.Item href="#/topic">Topic</Dropdown.Item>
-                                <Dropdown.Item href="#/grade">Grade</Dropdown.Item>
-                                <Dropdown.Item href="#/partner">Partner</Dropdown.Item>
-                                <Dropdown.Item href="#/a-z">Ascending order</Dropdown.Item>
-                                <Dropdown.Item href="#/z-a">Descending order</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-
-                    <div className="search">
-                        <SearchBar />
-                    </div>
-                    
-                </div>
+                <div className="searchFilter">
+                    <SearchBar />
+                </div>                    
             </div>
                 
             <div className="browseView">
                 <Sidebar />
                 <VideosComments className="browseViewFeed" />
+            </div>
+
+            <div className="uploadSection">
+                <Form>
+                    <h5>Upload Your Video Here</h5> <hr /> <br />
+                    <Form.Group>
+                        <Form.File id="uploadFile" />
+                    </Form.Group>
+                </Form>
             </div>
         </div>
     );

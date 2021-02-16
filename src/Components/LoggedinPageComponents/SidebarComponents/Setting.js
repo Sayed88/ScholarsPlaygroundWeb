@@ -8,7 +8,7 @@ import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 function Setting() {
     return (
-        <div className="setting mt-5">
+        <div className="setting mt-5">            
             <div className="WatchingViewLnk">
                 <Link to="loggedin_view">
                     <KeyboardBackspaceIcon />

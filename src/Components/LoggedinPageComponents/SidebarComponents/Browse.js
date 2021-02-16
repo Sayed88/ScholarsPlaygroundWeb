@@ -5,7 +5,6 @@ import Sidebar from '../Sidebar';
 import UserLogin from '../UserLogin';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
-
 function Browse() {
     return (
         <div className="browse mt-5">
@@ -19,7 +18,7 @@ function Browse() {
             <div className="browseSections">
                 <Sidebar />
                 <div className="browseContent">
-                    <h1>Browse Page contents </h1>
+                    <h1>Browse Page Contents </h1>
                 </div>
             </div>
         </div>

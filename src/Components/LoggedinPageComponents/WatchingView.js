@@ -9,7 +9,6 @@ import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import ReactPlayer from 'react-player';
 
 
-
 function WatchingView() {
 
     // Progresbar variable
@@ -17,7 +16,6 @@ function WatchingView() {
 
     return (
         <div className="WatchingView">
-
             <div className="WatchingViewLnk">
                 <Link to="/loggedin_view">
                     <KeyboardBackspaceIcon />

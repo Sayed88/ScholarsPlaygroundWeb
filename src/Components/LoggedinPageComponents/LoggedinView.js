@@ -7,13 +7,11 @@ import VideosLists from './VideosLists';
 import UserLogin from './UserLogin';
 import { Form } from 'react-bootstrap';
 
-
 function LoggedinView() {
     
     return (
         <div className="loggedinView">
-
-            <h1>Logged in View Mode</h1>
+            <h1>Logged in View Mode </h1>
             
             <div>
                 <UserLogin />
@@ -34,16 +32,6 @@ function LoggedinView() {
                 <VideosLists />
             </div>
 
-            <div className="uploadSection">
-                <Form>
-                    <h5>Upload Your Video Here</h5> <hr /> <br />
-                    <Form.Group>
-                        <Form.File id="uploadFile" />
-                    </Form.Group>
-                    <p>Need Confirmation if Upload Video Section is Necessery?</p>
-                </Form>
-            </div>
-            
         </div>
     )
 }

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import UserLogin from '../UserLogin';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
-
 function More() {
     return (
         <div className="more mt-5">

@@ -20,6 +20,7 @@ import TermsOfUse from './Components/TermsOfUse';
 import PrivacyPolicy from './Components/PrivacyPolicy';
 import ResetPassword from './Components/ResetPassword';
 import Plans from './Components/Plans';
+import SignOut from './Components/LoggedinPageComponents/SignOut';
 
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <WatchingView />
@@ -66,6 +70,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <BrowseView />
@@ -79,6 +86,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <LoggedinView />
@@ -92,6 +102,9 @@ function App() {
                   <DashboardIcon  />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <Home />
@@ -105,6 +118,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <Browse />
@@ -118,6 +134,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <More />
@@ -131,6 +150,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>            
             <Notifications />
@@ -144,6 +166,9 @@ function App() {
                   <DashboardIcon />
                   Dashboard
                 </h4>
+                <div className="signOut">
+                  <SignOut />
+                </div>
               </Link>
             </div>
             <Setting />
