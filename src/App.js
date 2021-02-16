@@ -21,6 +21,7 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import ResetPassword from './Components/ResetPassword';
 import Plans from './Components/Plans';
 import SignOut from './Components/LoggedinPageComponents/SignOut';
+import SeePartner from './Components/SeePartner';
 
 
 function App() {
@@ -38,6 +39,12 @@ function App() {
           <Route path="/partner_withus">
             <Header />
             <PartnerWithUs />
+            <Footer />
+          </Route>
+          
+          <Route path="/see_partner">
+            <Header />
+            <SeePartner />
             <Footer />
           </Route>
 

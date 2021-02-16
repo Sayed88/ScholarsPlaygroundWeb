@@ -27,7 +27,7 @@ function SignUp() {
 
             <div>
                 <Form onSubmit={handleSubmit}>
-                <h3>Welcome Back Scholars Playground Sign Up</h3> <hr />
+                <h3>Welcome to Scholars Playground Sign Up</h3> <hr />
                     <Form.Group size="lg" controlId="email">
                         <Form.Label>Email:</Form.Label>
                         <Form.Control
@@ -81,7 +81,7 @@ function SignUp() {
                 
                     <Link to="/forgotpassword">
                     </Link>
-                    <p>Already a Scholar <Link to="/login"> Login Here</Link></p>
+                    <p>Already Have an Account? <Link to="/login"> Login Here</Link></p>
                 </Form>
             </div>
 

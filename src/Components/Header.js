@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Header.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, } from 'react-router-dom';
-import { Button, Modal, Form, Nav, Navbar } from 'react-bootstrap';
+import { Button, Modal, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
@@ -34,7 +34,7 @@ function Header() {
 
   return (
     <div className="header">
-      <Navbar className="main-nav" variant="light" bg="light" fixed="top" position="relative" expand="lg">
+      <Navbar className="main-nav" variant="pills" bg="light" fixed="top" position="relative" expand="lg">
         <Navbar.Brand>
           <Link to="/" className='logo'><img className="LgImg" src={Image} alt="ScholarsPlayground Logo" /></Link>
         </Navbar.Brand>
@@ -46,7 +46,7 @@ function Header() {
               <Link to='/dashboard' className="menuItem">
                 <div className="navItems">
                   <DashboardIcon className="navIcn" />
-                  Dashboard
+                  Home
                 </div>
               </Link>
             </Nav.Link>
@@ -59,12 +59,17 @@ function Header() {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/partner_withus' className="menuItem">
-                <div className="navItems">
+                <div className="navItems menuItem">
                   <ThumbsUpDownIcon className="navIcn" />
-                  Partner With Us
+                  <NavDropdown title="Partner">
+                      <NavDropdown.Item>
+                        <Link to='/partner_withus'> Partner With Us </Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link to='/see_partner'> See Partner </Link>
+                      </NavDropdown.Item>
+                  </NavDropdown>
                 </div>
-              </Link>
             </Nav.Link>
             <Nav.Link>
               <Link to='/work_withus' className="menuItem">
@@ -99,7 +104,7 @@ function Header() {
       <div className="modalBtn">
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Welcome Back Scholar Please Login</Modal.Title>
+            <Modal.Title>Welcome Back Please Login</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form onSubmit={handleSubmit}>
